@@ -8,7 +8,7 @@ func EncodeString(data []byte) string {
 	return base64.StdEncoding.EncodeToString(data)
 }
 
-func DecodeStr(s string) ([]byte, error) {
+func DecodeString(s string) ([]byte, error) {
 	return base64.StdEncoding.DecodeString(s)
 }
 
