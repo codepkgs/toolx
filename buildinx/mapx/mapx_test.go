@@ -4,10 +4,26 @@ import (
 	"testing"
 )
 
-func TestMapxIn(t *testing.T) {
+func TestMapxHas(t *testing.T) {
 	m := map[string]string{
 		"username": "zhangsan",
 		"password": "zhangsan",
 	}
-	t.Log(In("username", m))
+	t.Log(Has(m, "username"))
+}
+
+func TestMapxKeys(t *testing.T) {
+	m := map[string]string{
+		"username": "zhangsan",
+		"password": "zhangsan",
+	}
+	t.Log(Keys(m))
+}
+
+func TestMapxValues(t *testing.T) {
+	m := map[string]string{
+		"username": "zhangsan",
+		"password": "zhangsan123",
+	}
+	t.Log(Values(m))
 }
